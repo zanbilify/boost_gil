@@ -1,0 +1,28 @@
+[package]
+name = "boost_gil"
+description = "Boost C++ library boost_gil packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_gil"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_gil"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_concept_check = { version = "0.1.0", path = "../boost_concept_check" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container_hash = { version = "0.1.0", path = "../boost_container_hash" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_filesystem = { version = "0.1.0", path = "../boost_filesystem" }
+boost_integer = { version = "0.1.0", path = "../boost_integer" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_mp11 = { version = "0.1.0", path = "../boost_mp11" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_variant2 = { version = "0.1.0", path = "../boost_variant2" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
